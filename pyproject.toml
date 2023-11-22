@@ -1,0 +1,49 @@
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SOME_PROJECT"
+version = "0.0.1"
+authors = [
+  { name="YOUR NAME", email="YOUR_EMAIL@test.com" },
+]
+description = "Description for your project"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "flask",
+    "flask-cors",
+    "requests",
+    "attrs",
+    "neo4j",
+    "websockets",
+    "playwright",
+    "spacy",
+    "redis",
+    "pymongo",
+    "beautifulsoup4",
+    "scikit-learn",
+    "pandas"
+]
+
+[project.urls]
+Homepage = "https://github.com/jasonjimnz/jspider"
+Issues = "https://github.com/jasonjimnz/jspider/issues"
+
+[tool.isort]
+src_paths = ["src", "tests"]
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
